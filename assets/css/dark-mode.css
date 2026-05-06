@@ -166,6 +166,30 @@ html[data-theme="dark"] .auth-mini-stats article {
     border-color: rgba(144, 188, 255, .16);
 }
 
+/* Preview cards dark mode */
+html[data-theme="dark"] .preview-card {
+    background: rgba(12, 22, 42, .96);
+    border-color: rgba(144, 188, 255, .14);
+    border-top-color: rgba(111, 168, 255, .5);
+}
+
+html[data-theme="dark"] .page-home-1 .preview-card {
+    background: linear-gradient(180deg, rgba(10, 20, 42, .98) 0%, rgba(12, 24, 48, .92) 52%, rgba(14, 26, 50, .98) 53%);
+}
+
+html[data-theme="dark"] .page-home-1 .preview-card .preview-card-copy {
+    background: rgba(14, 26, 52, .98);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, .22);
+}
+
+html[data-theme="dark"] .page-home-1 .preview-card-copy h3 {
+    color: #edf4ff;
+}
+
+html[data-theme="dark"] .page-home-1 .preview-card-copy p {
+    color: #aabedd;
+}
+
 html[data-theme="dark"] .app-showcase-hero.hero-banner .container,
 html[data-theme="dark"] .hero-banner-features .feature-hero-shell,
 html[data-theme="dark"] .about-hero-shell,

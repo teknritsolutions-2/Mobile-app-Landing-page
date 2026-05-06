@@ -8351,17 +8351,22 @@ section {
     height: clamp(200px, 24vw, 265px);
     max-height: clamp(200px, 24vw, 265px);
     object-fit: contain;
-    object-position: center bottom;
-    padding: clamp(20px, 2.4vw, 26px) clamp(20px, 2.4vw, 26px) 0;
+    object-position: center top;
+    padding: clamp(32px, 3.5vw, 44px) clamp(20px, 2.4vw, 26px) 0;
     margin: 0 auto;
     flex-shrink: 0;
 }
 .page-home-1 .preview-card .preview-card-copy {
-    padding: clamp(14px, 1.8vw, 20px) clamp(16px, 2vw, 22px);
+    padding: clamp(16px, 1.8vw, 22px) clamp(16px, 2vw, 22px);
     text-align: left;
     max-width: none;
-    border-top: 1px solid rgba(47, 111, 237, .1);
+    border-top: none;
     background: #fff;
+    border-radius: 18px 18px 0 0;
+    margin-top: -16px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -4px 16px rgba(31, 85, 199, .06);
 }
 
 /* Store device panel: clip overflowing phone image within card bounds */
