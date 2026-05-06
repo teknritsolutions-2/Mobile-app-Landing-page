@@ -174,12 +174,11 @@ html[data-theme="dark"] .preview-card {
 }
 
 html[data-theme="dark"] .page-home-1 .preview-card {
-    background: linear-gradient(180deg, rgba(10, 20, 42, .98) 0%, rgba(12, 24, 48, .92) 52%, rgba(14, 26, 50, .98) 53%);
+    background: rgba(11, 20, 40, .98);
 }
 
-html[data-theme="dark"] .page-home-1 .preview-card .preview-card-copy {
-    background: rgba(14, 26, 52, .98);
-    box-shadow: 0 -4px 16px rgba(0, 0, 0, .22);
+html[data-theme="dark"] .page-home-1 .preview-card::before {
+    background: linear-gradient(180deg, rgba(20, 36, 70, .96) 0%, rgba(15, 28, 58, .88) 100%);
 }
 
 html[data-theme="dark"] .page-home-1 .preview-card-copy h3 {

@@ -7506,11 +7506,16 @@ header + main > .contact-hero-banner:first-child {
         padding: 0;
     }
 
+    .page-home-1 .preview-card::before {
+        height: clamp(190px, 22vw, 255px);
+    }
     .page-home-1 .preview-card img,
     .page-home-1 .preview-card-featured img {
         width: min(100%, 185px);
         height: clamp(190px, 22vw, 255px);
         max-height: clamp(190px, 22vw, 255px);
+        position: relative;
+        z-index: 1;
     }
 
     .page-home-1 .store-layout {
@@ -7878,12 +7883,19 @@ header + main > .contact-hero-banner:first-child {
         max-width: none;
     }
 
+    .page-home-1 .preview-card::before {
+        height: clamp(185px, 26vw, 255px);
+    }
     .page-home-1 .preview-card img {
+        position: relative;
+        z-index: 1;
         width: min(100%, 170px);
         max-height: 260px;
     }
 
     .page-home-1 .preview-card-featured img {
+        position: relative;
+        z-index: 1;
         width: min(100%, 200px);
         max-height: 280px;
     }
@@ -8341,10 +8353,27 @@ section {
     place-items: unset;
     justify-items: unset;
     align-content: unset;
-    background: linear-gradient(180deg, rgba(219, 234, 255, .45) 0%, rgba(235, 244, 255, .2) 52%, #fff 53%);
+    background: var(--bg-elevated);
+    position: relative;
+    isolation: isolate;
+}
+/* Rounded image zone background */
+.page-home-1 .preview-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: clamp(200px, 24vw, 265px);
+    background: linear-gradient(180deg, rgba(214, 229, 255, .65) 0%, rgba(225, 239, 255, .35) 100%);
+    border-radius: 14px;
+    z-index: 0;
+    pointer-events: none;
 }
 .page-home-1 .preview-card img,
 .page-home-1 .preview-card-featured img {
+    position: relative;
+    z-index: 1;
     width: auto;
     align-self: center;
     max-width: min(100%, 200px);
@@ -8352,21 +8381,18 @@ section {
     max-height: clamp(200px, 24vw, 265px);
     object-fit: contain;
     object-position: center top;
-    padding: clamp(32px, 3.5vw, 44px) clamp(20px, 2.4vw, 26px) 0;
-    margin: 0 auto;
+    padding: clamp(32px, 3.5vw, 44px) clamp(16px, 2vw, 22px) 0;
+    margin: 10px auto 0;
     flex-shrink: 0;
 }
 .page-home-1 .preview-card .preview-card-copy {
-    padding: clamp(16px, 1.8vw, 22px) clamp(16px, 2vw, 22px);
-    text-align: left;
-    max-width: none;
-    border-top: none;
-    background: #fff;
-    border-radius: 18px 18px 0 0;
-    margin-top: -16px;
     position: relative;
     z-index: 1;
-    box-shadow: 0 -4px 16px rgba(31, 85, 199, .06);
+    padding: clamp(14px, 1.8vw, 20px) clamp(16px, 2vw, 22px);
+    text-align: left;
+    max-width: none;
+    border-top: 1px solid rgba(47, 111, 237, .08);
+    background: transparent;
 }
 
 /* Store device panel: clip overflowing phone image within card bounds */
