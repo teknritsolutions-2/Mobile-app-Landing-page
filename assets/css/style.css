@@ -621,14 +621,14 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(244, 248, 255, .88);
+    background: rgba(255, 255, 255, .92);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
     transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease, backdrop-filter .3s ease;
 }
 
 .topbar.is-scrolled {
-    background: rgba(244, 248, 255, .97);
+    background: rgba(255, 255, 255, .98);
     border-bottom-color: rgba(47, 111, 237, .14);
     box-shadow: 0 14px 34px rgba(31, 85, 199, .08);
 }
@@ -2324,7 +2324,7 @@ section {
 /* Eyebrow Class */
 .eyebrow {
     display: inline-flex;
-    padding: 8px 14px;
+    padding: 10px 20px;
     border-radius: 999px;
     background: rgba(47, 111, 237, .1);
     color: var(--primary-strong);
@@ -6527,33 +6527,39 @@ section {
 }
 
 .preview-card {
-    display: grid;
-    place-items: center;
-    padding: clamp(18px, 2vw, 24px);
+    display: flex;
+    flex-direction: column;
     border-radius: calc(var(--radius) + 6px);
-    border: 1px solid rgba(47, 111, 237, .14);
-    background:
-        radial-gradient(circle at top, rgba(255, 255, 255, .88), transparent 38%),
-        linear-gradient(180deg, rgba(255, 255, 255, .96), rgba(220, 233, 255, .9));
-    box-shadow: 0 22px 48px rgba(31, 85, 199, .10);
+    border: 1.5px solid rgba(47, 111, 237, .15);
+    border-top: 2.5px solid rgba(47, 111, 237, .55);
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(31, 85, 199, .07), 0 1px 4px rgba(31, 85, 199, .05);
     overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 52px rgba(31, 85, 199, .13), 0 4px 10px rgba(31, 85, 199, .07);
+    border-color: rgba(47, 111, 237, .28);
+    border-top-color: rgba(47, 111, 237, .75);
 }
 
 .preview-card img {
     display: block;
     width: min(100%, 200px);
-    max-height: 320px;
+    max-height: 280px;
     object-fit: contain;
     margin: 0 auto;
 }
 
 .preview-card-featured {
-    padding: clamp(22px, 2.6vw, 30px);
+    border-top-color: rgba(47, 111, 237, .55);
 }
 
 .preview-card-featured img {
-    width: min(100%, 280px);
-    max-height: 360px;
+    width: min(100%, 200px);
+    max-height: 280px;
     object-fit: contain;
 }
 
@@ -7169,13 +7175,13 @@ header + main > .contact-hero-banner:first-child {
 
 .page-home-1 .preview-card,
 .page-home-1 .preview-card-featured {
-    padding: 16px;
+    padding: 0;
 }
 
 .page-home-1 .preview-card img,
 .page-home-1 .preview-card-featured img {
     width: min(100%, 200px);
-    max-height: 300px;
+    max-height: 265px;
     object-fit: contain;
 }
 
@@ -7493,23 +7499,18 @@ header + main > .contact-hero-banner:first-child {
     .page-home-1 .preview-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
-        max-width: 1080px;
-        margin: 0 auto;
     }
 
     .page-home-1 .preview-card,
     .page-home-1 .preview-card-featured {
-        padding: 18px;
+        padding: 0;
     }
 
-    .page-home-1 .preview-card img {
-        width: min(100%, 180px);
-        max-height: 280px;
-    }
-
+    .page-home-1 .preview-card img,
     .page-home-1 .preview-card-featured img {
-        width: min(100%, 210px);
-        max-height: 300px;
+        width: min(100%, 185px);
+        height: clamp(190px, 22vw, 255px);
+        max-height: clamp(190px, 22vw, 255px);
     }
 
     .page-home-1 .store-layout {
@@ -7995,8 +7996,7 @@ header + main > .contact-hero-banner:first-child {
 .page-pricing .support-grid,
 .page-contact .support-grid,
 .page-pricing .plans-grid {
-    width: min(100%, 1020px);
-    margin-inline: auto;
+    width: 100%;
 }
 
 .page-home-2 .comparison-table-wrap,
@@ -8219,16 +8219,14 @@ section {
 .container > h1,
 .container > h2,
 .container > h3,
-.container > p,
-.container > .eyebrow {
+.container > p {
     padding-inline: clamp(0px, 0.5vw, 6px);
 }
 
 /* Section-head headings & paragraphs also get consistent inline padding */
 .section-head h1,
 .section-head h2,
-.section-head p,
-.section-head .eyebrow {
+.section-head p {
     padding-inline: 0;
 }
 
@@ -8343,31 +8341,27 @@ section {
     place-items: unset;
     justify-items: unset;
     align-content: unset;
+    background: linear-gradient(180deg, rgba(219, 234, 255, .45) 0%, rgba(235, 244, 255, .2) 52%, #fff 53%);
 }
-.page-home-1 .preview-card img {
+.page-home-1 .preview-card img,
+.page-home-1 .preview-card-featured img {
     width: auto;
     align-self: center;
     max-width: min(100%, 200px);
-    height: clamp(180px, 22vw, 260px);
-    max-height: clamp(180px, 22vw, 260px);
+    height: clamp(200px, 24vw, 265px);
+    max-height: clamp(200px, 24vw, 265px);
     object-fit: contain;
     object-position: center bottom;
-    padding: clamp(14px, 2vw, 20px) clamp(14px, 2vw, 20px) 0;
+    padding: clamp(20px, 2.4vw, 26px) clamp(20px, 2.4vw, 26px) 0;
     margin: 0 auto;
     flex-shrink: 0;
 }
-.page-home-1 .preview-card-featured img {
-    max-width: min(100%, 240px);
-    height: clamp(200px, 26vw, 300px);
-    max-height: clamp(200px, 26vw, 300px);
-    padding: clamp(16px, 2.4vw, 24px) clamp(16px, 2.4vw, 24px) 0;
-}
 .page-home-1 .preview-card .preview-card-copy {
-    flex: 1;
-    padding: clamp(12px, 1.6vw, 18px) clamp(14px, 1.8vw, 20px);
+    padding: clamp(14px, 1.8vw, 20px) clamp(16px, 2vw, 22px);
     text-align: left;
     max-width: none;
     border-top: 1px solid rgba(47, 111, 237, .1);
+    background: #fff;
 }
 
 /* Store device panel: clip overflowing phone image within card bounds */
