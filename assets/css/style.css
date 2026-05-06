@@ -8481,6 +8481,24 @@ section {
     margin-inline: clamp(12px, 2vw, 24px);
 }
 
+/* Feature-pair video-card images: remove aspect-ratio so image fills full card height.
+   Must match the page-specific rule's specificity (0,3,1) to override aspect-ratio: 16/10 */
+.page-home-1 .feature-pair .video-card img,
+.page-home-1 .feature-pair .video-card .media-shot,
+.page-home-2 .feature-pair .video-card img,
+.page-home-2 .feature-pair .video-card .media-shot,
+.page-about .feature-pair .video-card img,
+.page-about .feature-pair .video-card .media-shot,
+.page-reviews .feature-pair .video-card img,
+.page-reviews .feature-pair .video-card .media-shot,
+.page-coming-soon .feature-pair .video-card img,
+.page-coming-soon .feature-pair .video-card .media-shot {
+    aspect-ratio: unset;
+    height: 100%;
+    min-height: clamp(240px, 28vw, 400px);
+    border-radius: var(--radius);
+}
+
 /* Eyebrow badges: generous padding so the pill reads clearly */
 .eyebrow {
     padding: 10px 24px;
