@@ -1,0 +1,306 @@
+/* RTL (Right-to-Left) Support Styles */
+
+/* Base RTL body direction */
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+/* Container and grid layouts - RTL direction */
+html[dir="rtl"] .topbar .container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .hero-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .feature-pair {
+    direction: rtl;
+}
+
+html[dir="rtl"] .contact-layout {
+    direction: rtl;
+}
+
+html[dir="rtl"] .auth-layout {
+    direction: rtl;
+}
+
+html[dir="rtl"] .blog-layout {
+    direction: rtl;
+}
+
+html[dir="rtl"] .overview-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .app-showcase-grid,
+html[dir="rtl"] .about-hero-grid,
+html[dir="rtl"] .feature-hero-grid,
+html[dir="rtl"] .contact-hero-grid,
+html[dir="rtl"] .blog-hero-grid,
+html[dir="rtl"] .waitlist-layout,
+html[dir="rtl"] .founder-layout,
+html[dir="rtl"] .store-layout,
+html[dir="rtl"] .roadmap-grid,
+html[dir="rtl"] .page-hero-layout {
+    direction: rtl;
+}
+
+html[dir="rtl"] .footer-bottom {
+    direction: rtl;
+}
+
+/* Dropdown menu positioning */
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+/* Comparison table text alignment */
+html[dir="rtl"] .comparison-table th {
+    text-align: right;
+}
+
+html[dir="rtl"] .comparison-table td {
+    text-align: right;
+}
+
+/* Form field text alignment */
+html[dir="rtl"] .field input {
+    text-align: right;
+}
+
+html[dir="rtl"] .field textarea {
+    text-align: right;
+}
+
+/* Sidebar and navigation text alignment */
+html[dir="rtl"] .sidebar-card {
+    text-align: right;
+}
+
+html[dir="rtl"] .nav-link {
+    text-align: right;
+}
+
+html[dir="rtl"] .dropdown-menu a {
+    text-align: right;
+}
+
+html[dir="rtl"] .section-head,
+html[dir="rtl"] .hero-card,
+html[dir="rtl"] .feature-card,
+html[dir="rtl"] .benefit-card,
+html[dir="rtl"] .timeline-card,
+html[dir="rtl"] .achievement-card,
+html[dir="rtl"] .stat-card,
+html[dir="rtl"] .support-card,
+html[dir="rtl"] .testimonial-card,
+html[dir="rtl"] .faq-item,
+html[dir="rtl"] .countdown-card,
+html[dir="rtl"] .app-showcase-copy,
+html[dir="rtl"] .contact-hero-copy,
+html[dir="rtl"] .blog-hero-copy,
+html[dir="rtl"] .feature-hero-copy,
+html[dir="rtl"] .waitlist-copy,
+html[dir="rtl"] .article-content,
+html[dir="rtl"] .sidebar-card,
+html[dir="rtl"] .page-hero,
+html[dir="rtl"] .auth-card {
+    text-align: right;
+}
+
+/* Flexbox direction reversal for various action elements */
+html[dir="rtl"] .slider-controls {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .cta-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .app-badges {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .social-list {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .share-row {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .showcase-brand-row,
+html[dir="rtl"] .showcase-mini-nav,
+html[dir="rtl"] .showcase-metrics,
+html[dir="rtl"] .hero-stat-list {
+    direction: rtl;
+}
+
+html[dir="rtl"] .floating-badge.one {
+    left: auto;
+    right: -2%;
+}
+
+html[dir="rtl"] .floating-badge.two {
+    right: auto;
+    left: -6%;
+}
+
+html[dir="rtl"] .showcase-float-card {
+    left: auto;
+    right: clamp(18px, 8vw, 120px);
+}
+
+/* Home-1 specific RTL support */
+html[dir="rtl"] .page-home-1 .app-showcase-copy,
+html[dir="rtl"] .page-home-1 .premium-value-head,
+html[dir="rtl"] .page-home-1 .premium-value-summary,
+html[dir="rtl"] .page-home-1 .premium-value-card,
+html[dir="rtl"] .page-home-1 .results-head,
+html[dir="rtl"] .page-home-1 .result-card,
+html[dir="rtl"] .page-home-1 .stories-head,
+html[dir="rtl"] .page-home-1 .story-feature-body,
+html[dir="rtl"] .page-home-1 .story-item,
+html[dir="rtl"] .page-home-1 .integrations-head,
+html[dir="rtl"] .page-home-1 .integration-rail,
+html[dir="rtl"] .page-home-1 .integration-card,
+html[dir="rtl"] .page-home-1 .store-copy,
+html[dir="rtl"] .page-home-1 .store-device-panel,
+html[dir="rtl"] .page-home-1 .screens-note {
+    text-align: right;
+}
+
+html[dir="rtl"] .page-home-1 .premium-value-board,
+html[dir="rtl"] .page-home-1 .premium-value-grid,
+html[dir="rtl"] .page-home-1 .results-kpis,
+html[dir="rtl"] .page-home-1 .results-grid,
+html[dir="rtl"] .page-home-1 .stories-layout,
+html[dir="rtl"] .page-home-1 .story-proof-strip,
+html[dir="rtl"] .page-home-1 .story-list,
+html[dir="rtl"] .page-home-1 .integrations-layout,
+html[dir="rtl"] .page-home-1 .integrations-grid,
+html[dir="rtl"] .page-home-1 .integration-logo-grid,
+html[dir="rtl"] .page-home-1 .store-platform-list {
+    direction: rtl;
+}
+
+html[dir="rtl"] .page-home-1 .hero-mini-reviews,
+html[dir="rtl"] .page-home-1 .showcase-metrics,
+html[dir="rtl"] .page-home-1 .showcase-brand-row,
+html[dir="rtl"] .page-home-1 .hero-proof-list,
+html[dir="rtl"] .page-home-1 .hero-actions,
+html[dir="rtl"] .page-home-1 .result-card-top,
+html[dir="rtl"] .page-home-1 .result-footer,
+html[dir="rtl"] .page-home-1 .story-feature-meta,
+html[dir="rtl"] .page-home-1 .story-item-meta,
+html[dir="rtl"] .page-home-1 .store-actions {
+    direction: rtl;
+}
+
+/* Home-1 alignment fixes (keep button order, just align to RTL) */
+html[dir="rtl"] .page-home-1 .hero-actions,
+html[dir="rtl"] .page-home-1 .cta-actions,
+html[dir="rtl"] .page-home-1 .slider-controls {
+    flex-direction: row;
+    justify-content: flex-start;
+    direction: rtl;
+}
+
+html[dir="rtl"] .page-home-1 .nav-wrap {
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .page-home-1 .dropdown-toggle {
+    flex-direction: row-reverse;
+}
+
+@media (min-width: 1024px) {
+    html[dir="rtl"] .nav-menu {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .topbar .brand {
+        justify-self: end;
+    }
+
+    html[dir="rtl"] .header-actions {
+        margin-inline-start: 0;
+        margin-inline-end: auto;
+        padding-inline-start: 0;
+        padding-inline-end: var(--space-6);
+        justify-self: start;
+    }
+}
+
+html[dir="rtl"] .page-home-1 .hero-proof-list li {
+    padding-left: 0;
+    padding-right: 28px;
+}
+
+html[dir="rtl"] .page-home-1 .hero-proof-list li::before {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .page-home-1 .hero-orbit-card-top {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .page-home-1 .hero-orbit-card-bottom {
+    right: auto;
+    left: 2%;
+}
+
+html[dir="rtl"] .page-home-1 .premium-value-shell::after,
+html[dir="rtl"] .page-home-1 .stories-shell::after,
+html[dir="rtl"] .page-home-1 .integrations-shell::after {
+    inset: auto auto -40% -12%;
+}
+
+html[dir="rtl"] .page-home-1 .integration-logo-grid span,
+html[dir="rtl"] .page-home-1 .result-tag,
+html[dir="rtl"] .page-home-1 .story-pill,
+html[dir="rtl"] .page-home-1 .integration-step,
+html[dir="rtl"] .page-home-1 .premium-index,
+html[dir="rtl"] .page-home-1 .waitlist-trust,
+html[dir="rtl"] .page-home-1 .store-note {
+    justify-self: start;
+}
+
+@media (max-width: 1023.98px) {
+    html[dir="rtl"] .page-home-1 .topbar .container {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    html[dir="rtl"] .page-home-1 .brand {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    html[dir="rtl"] .page-home-1 .menu-toggle {
+        grid-column: 1;
+        justify-self: end;
+    }
+
+    html[dir="rtl"] .page-home-1 .index-mobile-actions {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .page-home-1 .index-mobile-actions .mobile-menu-login {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
