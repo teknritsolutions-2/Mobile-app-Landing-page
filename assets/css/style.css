@@ -7108,7 +7108,18 @@ header + main > .contact-hero-banner:first-child {
 
 .page-login .auth-layout {
     max-width: 760px;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
     margin-inline: auto;
+}
+
+.page-login .auth-forms-stack {
+    width: min(100%, 760px);
+    justify-self: center;
+}
+
+.page-login .auth-card {
+    width: 100%;
 }
 
 .page-login .auth-forms-stack,
