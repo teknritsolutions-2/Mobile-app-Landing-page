@@ -4821,9 +4821,16 @@ body.login-page {
 }
 
 .login-page .auth-social-btn {
-    justify-content: flex-start;
     padding: 0 16px;
     border-color: rgba(47, 111, 237, .16);
+}
+
+.page-login .auth-social-btn {
+    justify-content: center;
+}
+
+.page-signup .auth-social-btn {
+    justify-content: flex-start;
 }
 
 .login-page .auth-social-btn span {
@@ -7153,6 +7160,15 @@ header + main > .contact-hero-banner:first-child {
 .page-login .auth-switch,
 .page-signup .auth-switch {
     margin-top: 10px;
+}
+
+.page-login .auth-switch {
+    margin-top: 4px;
+}
+
+.page-login .form-status:empty {
+    min-height: 0;
+    margin-top: 0;
 }
 
 .page-pricing .app-showcase-grid {
