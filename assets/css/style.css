@@ -7107,14 +7107,14 @@ header + main > .contact-hero-banner:first-child {
 }
 
 .page-login .auth-layout {
-    max-width: 560px;
+    max-width: 460px;
     grid-template-columns: minmax(0, 1fr);
     justify-items: center;
     margin-inline: auto;
 }
 
 .page-login .auth-forms-stack {
-    width: min(100%, 560px);
+    width: min(100%, 460px);
     justify-self: center;
 }
 
