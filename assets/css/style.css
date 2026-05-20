@@ -507,7 +507,7 @@ html[dir="rtl"] .password-toggle {
 }
 
 @media (min-width: 900px) {
-    .auth-layout-enhanced {
+    .page-signup .auth-layout-enhanced {
         grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
     }
 }
@@ -7106,6 +7106,11 @@ header + main > .contact-hero-banner:first-child {
     align-items: start;
 }
 
+.page-login .auth-layout {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
 .page-login .auth-forms-stack,
 .page-signup .auth-forms-stack {
     align-self: start;
@@ -7283,7 +7288,6 @@ header + main > .contact-hero-banner:first-child {
         height: clamp(300px, 33vw, 430px);
     }
 
-    .page-login .auth-layout,
     .page-signup .auth-layout {
         grid-template-columns: minmax(0, .96fr) minmax(340px, .92fr);
     }
