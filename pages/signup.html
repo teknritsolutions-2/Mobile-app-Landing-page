@@ -14,9 +14,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/dark-mode.css">
-    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260525-signup">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css?v=20260525-signup">
+    <link rel="stylesheet" href="../assets/css/rtl.css?v=20260525-signup">
+    <style>
+        .page-signup .auth-layout {
+            align-items: start;
+            max-width: 460px;
+            grid-template-columns: minmax(0, 1fr);
+            justify-items: center;
+            margin-inline: auto;
+        }
+
+        .page-signup .auth-forms-stack {
+            width: min(100%, 460px);
+            justify-self: center;
+            align-self: start;
+        }
+
+        .page-signup .auth-card {
+            width: 100%;
+        }
+
+        .page-signup .auth-social-btn {
+            justify-content: center;
+        }
+
+        .page-signup .auth-switch {
+            margin-top: 4px;
+        }
+
+        .page-signup .form-status:empty {
+            min-height: 0;
+            margin-top: 0;
+        }
+    </style>
 
 </head>
 
