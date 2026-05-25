@@ -506,12 +506,6 @@ html[dir="rtl"] .password-toggle {
     accent-color: var(--primary);
 }
 
-@media (min-width: 900px) {
-    .page-signup .auth-layout-enhanced {
-        grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
-    }
-}
-
 @media (max-width: 767px) {
     .hero-banner-home .container {
         background:
@@ -4825,12 +4819,9 @@ body.login-page {
     border-color: rgba(47, 111, 237, .16);
 }
 
-.page-login .auth-social-btn {
-    justify-content: center;
-}
-
+.page-login .auth-social-btn,
 .page-signup .auth-social-btn {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .login-page .auth-social-btn span {
@@ -7113,19 +7104,22 @@ header + main > .contact-hero-banner:first-child {
     align-items: start;
 }
 
-.page-login .auth-layout {
+.page-login .auth-layout,
+.page-signup .auth-layout {
     max-width: 460px;
     grid-template-columns: minmax(0, 1fr);
     justify-items: center;
     margin-inline: auto;
 }
 
-.page-login .auth-forms-stack {
+.page-login .auth-forms-stack,
+.page-signup .auth-forms-stack {
     width: min(100%, 460px);
     justify-self: center;
 }
 
-.page-login .auth-card {
+.page-login .auth-card,
+.page-signup .auth-card {
     width: 100%;
 }
 
@@ -7159,14 +7153,11 @@ header + main > .contact-hero-banner:first-child {
 
 .page-login .auth-switch,
 .page-signup .auth-switch {
-    margin-top: 10px;
-}
-
-.page-login .auth-switch {
     margin-top: 4px;
 }
 
-.page-login .form-status:empty {
+.page-login .form-status:empty,
+.page-signup .form-status:empty {
     min-height: 0;
     margin-top: 0;
 }
@@ -7313,10 +7304,6 @@ header + main > .contact-hero-banner:first-child {
         right: clamp(12px, 4vw, 48px);
         width: min(38vw, 250px);
         height: clamp(300px, 33vw, 430px);
-    }
-
-    .page-signup .auth-layout {
-        grid-template-columns: minmax(0, .96fr) minmax(340px, .92fr);
     }
 
     .page-pricing .showcase-device-primary {
