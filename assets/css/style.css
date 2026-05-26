@@ -4740,6 +4740,30 @@ body.login-page {
     padding: 2rem 0 3rem;
 }
 
+.login-page .auth-card-brand {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto 0;
+    color: var(--text);
+    overflow: visible;
+    grid-column: auto;
+    gap: 10px;
+}
+
+.login-page .auth-card-brand span {
+    max-width: none;
+    font-size: clamp(1.4rem, 2.8vw, 1.95rem);
+    line-height: 1.05;
+    text-overflow: clip;
+}
+
+.login-page .auth-card-brand-mark {
+    width: clamp(38px, 4.4vw, 46px);
+    height: clamp(38px, 4.4vw, 46px);
+    border-radius: 14px;
+}
+
 .login-page main::before {
     content: "";
     position: absolute;
@@ -7121,6 +7145,36 @@ header + main > .contact-hero-banner:first-child {
 .page-login .auth-card,
 .page-signup .auth-card {
     width: 100%;
+}
+
+.page-login .auth-card-head,
+.page-signup .auth-card-head,
+.page-login .auth-switch,
+.page-signup .auth-switch {
+    text-align: center;
+}
+
+.page-login .auth-card-head,
+.page-signup .auth-card-head {
+    display: grid;
+    justify-items: center;
+}
+
+.page-login .auth-card-head > p,
+.page-signup .auth-card-head > p,
+.page-login .auth-card-head > .auth-trust-strip,
+.page-signup .auth-card-head > .auth-trust-strip {
+    width: 100%;
+}
+
+.page-login .auth-card-head > .eyebrow,
+.page-signup .auth-card-head > .eyebrow {
+    justify-self: center;
+}
+
+.page-login .auth-trust-strip,
+.page-signup .auth-trust-strip {
+    justify-content: center;
 }
 
 .page-login .auth-forms-stack,
